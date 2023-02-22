@@ -4,7 +4,7 @@
 
 ## Demo
 
-demoVideo/1.mp4
+![video](demoVideo/1.mp4)
 
 ## 註 : 
 第二個 App，扣還是有很多雜亂的地方
