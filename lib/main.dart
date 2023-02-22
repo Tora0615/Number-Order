@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'db.dart';
 import 'history_score.dart';
@@ -249,7 +247,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Expanded(
                       flex: 1,
-                      child: FlatButton.icon(
+                      child: TextButton.icon(
                           onPressed: (){
                             gameStart = false;
                             // print(useTime);
@@ -270,7 +268,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Expanded(
-                        child: FlatButton.icon(
+                        child: TextButton.icon(
                           onPressed: (){
                             gameStart = false;
                             setOpacity(10);
@@ -318,7 +316,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       itemCount: numList.length,
                       itemBuilder: (BuildContext context, int index) {
-                        return FlatButton(
+                        return TextButton(
                             onPressed: (){
                               // print(count);
                               if(count == numList.length){ //9、16
@@ -353,7 +351,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               }
                               setState(() {});
                             },
-                            color: Colors.amber,
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all(Colors.amber),
+                            // https://www.cnblogs.com/r1cardo/p/15597022.html
+                          ),
                             child: Center(
                               child: Opacity(
                                 //opacity: showAll ? startOpacity : gamingOpacity,
