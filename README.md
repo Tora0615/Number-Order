@@ -4,7 +4,7 @@
 
 ## Demo
 
-![video](demoVideo/1.mp4)
+https://user-images.githubusercontent.com/33981880/220560342-833fd469-4c48-43c6-a759-3f392862f3de.mp4
 
 ## 註 : 
 第二個 App，扣還是有很多雜亂的地方
